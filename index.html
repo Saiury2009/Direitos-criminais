@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos Criminais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Direitos Criminais</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#legislacao">Legislação</a></li>
+                    <li><a href="#consultoria">Consultoria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="introducao">
+        <div class="container">
+            <h2>O que são Direitos Criminais?</h2>
+            <p>Os direitos criminais envolvem as leis que protegem os indivíduos contra abusos do poder do Estado e os princípios que garantem um julgamento justo.</p>
+            <p>Esses direitos são fundamentais para garantir a liberdade e a segurança dos cidadãos.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Legislação -->
+    <section id="legislacao">
+        <div class="container">
+            <h2>Principais Leis Criminais</h2>
+            <button onclick="toggleLegislacao()">Mostrar/Esconder Leis</button>
+            <div id="leis" class="hidden">
+                <ul>
+                    <li><strong>Código Penal Brasileiro</strong>: Estabelece as penas para os crimes cometidos no Brasil.</li>
+                    <li><strong>Lei de Execução Penal (LEP)</strong>: Regula a execução das penas privativas de liberdade.</li>
+                    <li><strong>Lei Maria da Penha</strong>: Lei contra a violência doméstica.</li>
+                    <li><strong>Lei Anticrime</strong>: Conjunto de alterações no sistema penal brasileiro visando maior eficiência no combate ao crime.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Consultoria -->
+    <section id="consultoria">
+        <div class="container">
+            <h2>Consultoria e Defesa Jurídica</h2>
+            <p>Se você ou alguém precisa de assistência jurídica em matéria criminal, entre em contato com nossos advogados especializados.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Direitos Criminais | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container para alinhar o conteúdo */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Seção Principal */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+/* Botão Mostrar/Esconder Leis */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Leis */
+#leis {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+function toggleLegislacao() {
+    const leisDiv = document.getElementById("leis");
+    leisDiv.classList.toggle("hidden");
+}
